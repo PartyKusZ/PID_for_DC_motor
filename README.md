@@ -7,6 +7,8 @@ A project to study the characteristics of a DC motor, determine the PID controll
 - Encoder: Pololu 4761
 - Driver: TB6612FNG
 
+## PID 
+- sampling time: 10ms
 ## Step response of the motor
 To measure the step response, set the STEP_RESPONSE constant to 1 in the Core/Src/main.c file and upload program to stm32. On the pc, run the port.cpp program, which will receive and write the data to a file.
 ## PID settings
@@ -29,4 +31,4 @@ then run the engine.m script in Matlab, which will determine the PID settings ba
 
 ## PID controller
 
-In the Core/Src/main.c file, change the value of the STEP_RESPONSE constant to 0, enter the controller settings calculated by matlab. Now your motor is controlled by the PID!  
+In the Core/Src/main.c file, change the value of the STEP_RESPONSE constant to 0, enter the controller settings calculated by matlab. Now your motor is controlled by the PID! 
